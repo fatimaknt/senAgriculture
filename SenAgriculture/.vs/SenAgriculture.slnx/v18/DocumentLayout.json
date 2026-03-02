@@ -1,0 +1,102 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{88A64C9B-6BE7-47DA-A774-C999186CADD7}|AppSenAgriculture\\AppSenAgriculture.csproj|c:\\users\\kanou\\source\\repos\\senagriculture (1)\\senagriculture\\senagriculture\\appsenagriculture\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{88A64C9B-6BE7-47DA-A774-C999186CADD7}|AppSenAgriculture\\AppSenAgriculture.csproj|solutionrelative:appsenagriculture\\app.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88A64C9B-6BE7-47DA-A774-C999186CADD7}|AppSenAgriculture\\AppSenAgriculture.csproj|c:\\users\\kanou\\source\\repos\\senagriculture (1)\\senagriculture\\senagriculture\\appsenagriculture\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{88A64C9B-6BE7-47DA-A774-C999186CADD7}|AppSenAgriculture\\AppSenAgriculture.csproj|solutionrelative:appsenagriculture\\packages.config||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88A64C9B-6BE7-47DA-A774-C999186CADD7}|AppSenAgriculture\\AppSenAgriculture.csproj|C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\appsenagriculture\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88A64C9B-6BE7-47DA-A774-C999186CADD7}|AppSenAgriculture\\AppSenAgriculture.csproj|solutionrelative:appsenagriculture\\migrations\\configuration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88A64C9B-6BE7-47DA-A774-C999186CADD7}|AppSenAgriculture\\AppSenAgriculture.csproj|C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\appsenagriculture\\helpers\\filllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88A64C9B-6BE7-47DA-A774-C999186CADD7}|AppSenAgriculture\\AppSenAgriculture.csproj|solutionrelative:appsenagriculture\\helpers\\filllist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{88A64C9B-6BE7-47DA-A774-C999186CADD7}|AppSenAgriculture\\AppSenAgriculture.csproj|C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\appsenagriculture\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{88A64C9B-6BE7-47DA-A774-C999186CADD7}|AppSenAgriculture\\AppSenAgriculture.csproj|solutionrelative:appsenagriculture\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "App.config",
+              "DocumentMoniker": "C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\AppSenAgriculture\\App.config",
+              "RelativeDocumentMoniker": "AppSenAgriculture\\App.config",
+              "ToolTip": "C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\AppSenAgriculture\\App.config",
+              "RelativeToolTip": "AppSenAgriculture\\App.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAABjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-03-02T11:27:28.799Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Configuration.cs",
+              "DocumentMoniker": "C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\AppSenAgriculture\\Migrations\\Configuration.cs",
+              "RelativeDocumentMoniker": "AppSenAgriculture\\Migrations\\Configuration.cs",
+              "ToolTip": "C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\AppSenAgriculture\\Migrations\\Configuration.cs",
+              "RelativeToolTip": "AppSenAgriculture\\Migrations\\Configuration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T19:39:17.275Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "FillList.cs",
+              "DocumentMoniker": "C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\AppSenAgriculture\\Helpers\\FillList.cs",
+              "RelativeDocumentMoniker": "AppSenAgriculture\\Helpers\\FillList.cs",
+              "ToolTip": "C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\AppSenAgriculture\\Helpers\\FillList.cs",
+              "RelativeToolTip": "AppSenAgriculture\\Helpers\\FillList.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBUAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T19:20:25.522Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\AppSenAgriculture\\Program.cs",
+              "RelativeDocumentMoniker": "AppSenAgriculture\\Program.cs",
+              "ToolTip": "C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\AppSenAgriculture\\Program.cs",
+              "RelativeToolTip": "AppSenAgriculture\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-18T19:13:16.867Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "packages.config",
+              "DocumentMoniker": "C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\AppSenAgriculture\\packages.config",
+              "RelativeDocumentMoniker": "AppSenAgriculture\\packages.config",
+              "ToolTip": "C:\\Users\\kanou\\source\\repos\\SenAgriculture (1)\\SenAgriculture\\SenAgriculture\\AppSenAgriculture\\packages.config",
+              "RelativeToolTip": "AppSenAgriculture\\packages.config",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
+              "WhenOpened": "2026-02-18T19:12:59.278Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
