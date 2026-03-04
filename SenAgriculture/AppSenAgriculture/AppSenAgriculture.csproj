@@ -122,7 +122,13 @@
     <Compile Include="frmMDI.Designer.cs">
       <DependentUpon>frmMDI.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helpers\Crypto.cs" />
+    <Compile Include="Helpers\EmailHelper.cs" />
     <Compile Include="Helpers\FillList.cs" />
+    <Compile Include="Migrations\202603040155499_InitialCreate.cs" />
+    <Compile Include="Migrations\202603040155499_InitialCreate.Designer.cs">
+      <DependentUpon>202603040155499_InitialCreate.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\BdSenAgricultureContext.cs" />
     <Compile Include="Models\Categorie.cs" />
@@ -158,11 +164,20 @@
     <Compile Include="Views\Parametre\frmProduit.Designer.cs">
       <DependentUpon>frmProduit.cs</DependentUpon>
     </Compile>
+    <Compile Include="Views\Parametre\frmUtilisateur.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\Parametre\frmUtilisateur.Designer.cs">
+      <DependentUpon>frmUtilisateur.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmMDI.resx">
       <DependentUpon>frmMDI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202603040155499_InitialCreate.resx">
+      <DependentUpon>202603040155499_InitialCreate.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -181,6 +196,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Parametre\frmProduit.resx">
       <DependentUpon>frmProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\Parametre\frmUtilisateur.resx">
+      <DependentUpon>frmUtilisateur.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

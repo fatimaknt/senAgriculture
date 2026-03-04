@@ -106,5 +106,17 @@ namespace AppSenAgriculture
             f.Show();
             f.WindowState = FormWindowState.Maximized;
         }
+
+        private void utilisateurToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            /// <summary>
+            /// Ourvre le formulaire pour utilisateurs
+            /// </summary>
+            fermer();
+            frmUtilisateur f = new frmUtilisateur();
+            f.MdiParent = this;
+            f.Show();
+            f.WindowState = FormWindowState.Maximized;
+        }
     }
 }

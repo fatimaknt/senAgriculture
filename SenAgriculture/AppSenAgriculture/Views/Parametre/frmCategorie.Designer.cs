@@ -45,7 +45,7 @@
             this.dgCategorie.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgCategorie.Location = new System.Drawing.Point(190, 82);
             this.dgCategorie.Name = "dgCategorie";
-            this.dgCategorie.Size = new System.Drawing.Size(311, 315);
+            this.dgCategorie.Size = new System.Drawing.Size(363, 315);
             this.dgCategorie.TabIndex = 0;
             // 
             // label1
@@ -125,7 +125,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(513, 409);
+            this.ClientSize = new System.Drawing.Size(565, 409);
             this.ControlBox = false;
             this.Controls.Add(this.btnSelectionner);
             this.Controls.Add(this.btnModifier);

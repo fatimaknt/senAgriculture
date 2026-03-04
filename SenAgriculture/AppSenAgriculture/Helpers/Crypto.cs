@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -7,9 +7,10 @@ using System.Security.Cryptography;
 
 namespace AppSenAgriculture.Helpers
 {
-  internal static class Crypto
-  {
-    public static string HashMd5(string input)
+    internal static class Crypto
+    {
+        // GENERE UN HASH A PARTIR D'UNE ENTREE DE TEXTE
+        public static string HashMd5(string input)
         {
             using (MD5 md5 = MD5.Create())
             {
@@ -25,5 +26,5 @@ namespace AppSenAgriculture.Helpers
                 return sb.ToString();
             }
         }
-  }
+    }
 }

@@ -37,6 +37,7 @@
             this.produitToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cateorieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.lieuToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.utilisateurToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -87,7 +88,8 @@
             this.parametreToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.produitToolStripMenuItem,
             this.cateorieToolStripMenuItem,
-            this.lieuToolStripMenuItem});
+            this.lieuToolStripMenuItem,
+            this.utilisateurToolStripMenuItem});
             this.parametreToolStripMenuItem.Name = "parametreToolStripMenuItem";
             this.parametreToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.parametreToolStripMenuItem.Text = "Parametre";
@@ -112,6 +114,13 @@
             this.lieuToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.lieuToolStripMenuItem.Text = "&Lieu";
             this.lieuToolStripMenuItem.Click += new System.EventHandler(this.lieuToolStripMenuItem_Click);
+            // 
+            // utilisateurToolStripMenuItem
+            // 
+            this.utilisateurToolStripMenuItem.Name = "utilisateurToolStripMenuItem";
+            this.utilisateurToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.utilisateurToolStripMenuItem.Text = "&Utilisateur";
+            this.utilisateurToolStripMenuItem.Click += new System.EventHandler(this.utilisateurToolStripMenuItem_Click);
             // 
             // frmMDI
             // 
@@ -144,5 +153,6 @@
         private System.Windows.Forms.ToolStripMenuItem produitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cateorieToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lieuToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem utilisateurToolStripMenuItem;
     }
 }
