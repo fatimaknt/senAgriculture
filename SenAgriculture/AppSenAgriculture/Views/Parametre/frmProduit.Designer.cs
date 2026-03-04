@@ -45,6 +45,8 @@
             this.btnAjouter = new System.Windows.Forms.Button();
             this.btnSelectionner = new System.Windows.Forms.Button();
             this.dgProduit = new System.Windows.Forms.DataGridView();
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.panelMain = new System.Windows.Forms.Panel();
             this.Rechercher = new System.Windows.Forms.GroupBox();
             this.txtRPrixUMin = new System.Windows.Forms.TextBox();
             this.txtRDescription = new System.Windows.Forms.TextBox();
@@ -55,6 +57,8 @@
             this.btnRechercher = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgProduit)).BeginInit();
             this.Rechercher.SuspendLayout();
+            this.panelLeft.SuspendLayout();
+            this.panelMain.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
@@ -65,6 +69,8 @@
             this.label1.Size = new System.Drawing.Size(37, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Libelle";
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(60, 70, 65);
             // 
             // txtLibelle
             // 
@@ -72,6 +78,7 @@
             this.txtLibelle.Name = "txtLibelle";
             this.txtLibelle.Size = new System.Drawing.Size(264, 20);
             this.txtLibelle.TabIndex = 1;
+            this.txtLibelle.Font = new System.Drawing.Font("Segoe UI", 9F);
             // 
             // txtDescription
             // 
@@ -79,6 +86,7 @@
             this.txtDescription.Name = "txtDescription";
             this.txtDescription.Size = new System.Drawing.Size(264, 20);
             this.txtDescription.TabIndex = 3;
+            this.txtDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
             // 
             // label2
             // 
@@ -95,6 +103,7 @@
             this.txtPrixUMin.Name = "txtPrixUMin";
             this.txtPrixUMin.Size = new System.Drawing.Size(264, 20);
             this.txtPrixUMin.TabIndex = 5;
+            this.txtPrixUMin.Font = new System.Drawing.Font("Segoe UI", 9F);
             // 
             // label3
             // 
@@ -111,6 +120,7 @@
             this.txtPrixUMax.Name = "txtPrixUMax";
             this.txtPrixUMax.Size = new System.Drawing.Size(264, 20);
             this.txtPrixUMax.TabIndex = 7;
+            this.txtPrixUMax.Font = new System.Drawing.Font("Segoe UI", 9F);
             // 
             // label4
             // 
@@ -146,6 +156,7 @@
             this.cbbUniteMesure.Name = "cbbUniteMesure";
             this.cbbUniteMesure.Size = new System.Drawing.Size(261, 21);
             this.cbbUniteMesure.TabIndex = 12;
+            this.cbbUniteMesure.Font = new System.Drawing.Font("Segoe UI", 9F);
             // 
             // cbbCategorie
             // 
@@ -154,37 +165,44 @@
             this.cbbCategorie.Name = "cbbCategorie";
             this.cbbCategorie.Size = new System.Drawing.Size(261, 21);
             this.cbbCategorie.TabIndex = 13;
+            this.cbbCategorie.Font = new System.Drawing.Font("Segoe UI", 9F);
             // 
             // btnModifier
             // 
             this.btnModifier.Location = new System.Drawing.Point(191, 423);
             this.btnModifier.Name = "btnModifier";
-            this.btnModifier.Size = new System.Drawing.Size(75, 23);
+            this.btnModifier.Size = new System.Drawing.Size(75, 28);
             this.btnModifier.TabIndex = 16;
             this.btnModifier.Text = "&Modifier";
             this.btnModifier.UseVisualStyleBackColor = true;
             this.btnModifier.Click += new System.EventHandler(this.btnModifier_Click);
+            this.btnModifier.BackColor = System.Drawing.Color.FromArgb(220, 235, 230);
+            this.btnModifier.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             // 
             // btnSupprimer
             // 
             this.btnSupprimer.Location = new System.Drawing.Point(191, 452);
             this.btnSupprimer.Name = "btnSupprimer";
-            this.btnSupprimer.Size = new System.Drawing.Size(75, 23);
+            this.btnSupprimer.Size = new System.Drawing.Size(75, 28);
             this.btnSupprimer.TabIndex = 15;
             this.btnSupprimer.Tag = "";
             this.btnSupprimer.Text = "&Supprimer";
             this.btnSupprimer.UseVisualStyleBackColor = true;
             this.btnSupprimer.Click += new System.EventHandler(this.btnSupprimer_Click);
+            this.btnSupprimer.BackColor = System.Drawing.Color.FromArgb(240, 225, 225);
+            this.btnSupprimer.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             // 
             // btnAjouter
             // 
             this.btnAjouter.Location = new System.Drawing.Point(191, 394);
             this.btnAjouter.Name = "btnAjouter";
-            this.btnAjouter.Size = new System.Drawing.Size(75, 23);
+            this.btnAjouter.Size = new System.Drawing.Size(75, 28);
             this.btnAjouter.TabIndex = 14;
             this.btnAjouter.Text = "&Ajouter";
             this.btnAjouter.UseVisualStyleBackColor = true;
             this.btnAjouter.Click += new System.EventHandler(this.btnAjouter_Click);
+            this.btnAjouter.BackColor = System.Drawing.Color.FromArgb(200, 230, 210);
+            this.btnAjouter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             // 
             // btnSelectionner
             // 
@@ -203,10 +221,17 @@
             this.dgProduit.Name = "dgProduit";
             this.dgProduit.Size = new System.Drawing.Size(841, 438);
             this.dgProduit.TabIndex = 18;
+            this.dgProduit.BackgroundColor = System.Drawing.Color.FromArgb(250, 251, 250);
+            this.dgProduit.EnableHeadersVisualStyles = false;
+            this.dgProduit.ColumnHeadersDefaultCellStyle.BackColor = System.Drawing.Color.FromArgb(230, 235, 233);
+            this.dgProduit.ColumnHeadersDefaultCellStyle.ForeColor = System.Drawing.Color.FromArgb(50, 60, 55);
+            var altStyle = new System.Windows.Forms.DataGridViewCellStyle();
+            altStyle.BackColor = System.Drawing.Color.FromArgb(248, 249, 248);
+            this.dgProduit.AlternatingRowsDefaultCellStyle = altStyle;
             // 
             // Rechercher
             // 
-            this.Rechercher.BackColor = System.Drawing.Color.Silver;
+            this.Rechercher.BackColor = System.Drawing.Color.FromArgb(242, 245, 244);
             this.Rechercher.Controls.Add(this.btnRechercher);
             this.Rechercher.Controls.Add(this.txtRPrixUMin);
             this.Rechercher.Controls.Add(this.txtRDescription);
@@ -227,6 +252,7 @@
             this.txtRPrixUMin.Name = "txtRPrixUMin";
             this.txtRPrixUMin.Size = new System.Drawing.Size(110, 20);
             this.txtRPrixUMin.TabIndex = 21;
+            this.txtRPrixUMin.Font = new System.Drawing.Font("Segoe UI", 9F);
             // 
             // txtRDescription
             // 
@@ -234,6 +260,7 @@
             this.txtRDescription.Name = "txtRDescription";
             this.txtRDescription.Size = new System.Drawing.Size(110, 20);
             this.txtRDescription.TabIndex = 21;
+            this.txtRDescription.Font = new System.Drawing.Font("Segoe UI", 9F);
             // 
             // label9
             // 
@@ -250,6 +277,7 @@
             this.txtRLibelle.Name = "txtRLibelle";
             this.txtRLibelle.Size = new System.Drawing.Size(110, 20);
             this.txtRLibelle.TabIndex = 21;
+            this.txtRLibelle.Font = new System.Drawing.Font("Segoe UI", 9F);
             // 
             // label8
             // 
@@ -273,36 +301,65 @@
             // 
             this.btnRechercher.Location = new System.Drawing.Point(577, 31);
             this.btnRechercher.Name = "btnRechercher";
-            this.btnRechercher.Size = new System.Drawing.Size(75, 23);
+            this.btnRechercher.Size = new System.Drawing.Size(85, 26);
             this.btnRechercher.TabIndex = 20;
             this.btnRechercher.Text = "&Rechercher";
             this.btnRechercher.UseVisualStyleBackColor = true;
             this.btnRechercher.Click += new System.EventHandler(this.btnRechercher_Click);
+            this.btnRechercher.BackColor = System.Drawing.Color.FromArgb(200, 225, 210);
+            this.btnRechercher.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             // 
+            // panelLeft
+            // 
+            this.panelLeft = new System.Windows.Forms.Panel();
+            this.panelLeft.BackColor = System.Drawing.Color.FromArgb(245, 246, 245);
+            this.panelLeft.Dock = System.Windows.Forms.DockStyle.Left;
+            this.panelLeft.Location = new System.Drawing.Point(0, 0);
+            this.panelLeft.Name = "panelLeft";
+            this.panelLeft.Size = new System.Drawing.Size(300, 492);
+            this.panelLeft.TabIndex = 21;
+            this.panelLeft.Controls.Add(this.label1);
+            this.panelLeft.Controls.Add(this.txtLibelle);
+            this.panelLeft.Controls.Add(this.label2);
+            this.panelLeft.Controls.Add(this.txtDescription);
+            this.panelLeft.Controls.Add(this.label3);
+            this.panelLeft.Controls.Add(this.txtPrixUMin);
+            this.panelLeft.Controls.Add(this.label4);
+            this.panelLeft.Controls.Add(this.txtPrixUMax);
+            this.panelLeft.Controls.Add(this.label5);
+            this.panelLeft.Controls.Add(this.cbbUniteMesure);
+            this.panelLeft.Controls.Add(this.label6);
+            this.panelLeft.Controls.Add(this.cbbCategorie);
+            this.panelLeft.Controls.Add(this.btnAjouter);
+            this.panelLeft.Controls.Add(this.btnModifier);
+            this.panelLeft.Controls.Add(this.btnSupprimer);
+
+            // panelMain
+            this.panelMain = new System.Windows.Forms.Panel();
+            this.panelMain.BackColor = System.Drawing.Color.FromArgb(250, 251, 250);
+            this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panelMain.Location = new System.Drawing.Point(300, 0);
+            this.panelMain.Name = "panelMain";
+            this.panelMain.Size = new System.Drawing.Size(853, 492);
+            this.panelMain.TabIndex = 22;
+            this.Rechercher.Dock = System.Windows.Forms.DockStyle.Top;
+            this.Rechercher.Height = 72;
+            this.dgProduit.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnSelectionner.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnSelectionner.Location = new System.Drawing.Point(760, 10);
+            this.panelMain.Controls.Add(this.dgProduit);
+            this.panelMain.Controls.Add(this.Rechercher);
+            this.panelMain.Controls.Add(this.btnSelectionner);
+
             // frmProduit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1153, 492);
             this.ControlBox = false;
-            this.Controls.Add(this.Rechercher);
-            this.Controls.Add(this.dgProduit);
-            this.Controls.Add(this.btnSelectionner);
-            this.Controls.Add(this.btnModifier);
-            this.Controls.Add(this.btnSupprimer);
-            this.Controls.Add(this.btnAjouter);
-            this.Controls.Add(this.cbbCategorie);
-            this.Controls.Add(this.cbbUniteMesure);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.txtPrixUMax);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.txtPrixUMin);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.txtDescription);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtLibelle);
-            this.Controls.Add(this.label1);
+            this.BackColor = System.Drawing.Color.FromArgb(250, 251, 250);
+            this.Controls.Add(this.panelMain);
+            this.Controls.Add(this.panelLeft);
             this.Name = "frmProduit";
             this.Text = "Produit";
             this.Load += new System.EventHandler(this.frmProduit_Load);
@@ -311,6 +368,8 @@
             this.Rechercher.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
+            this.panelLeft.ResumeLayout(false);
+            this.panelMain.ResumeLayout(false);
 
         }
 
@@ -333,6 +392,8 @@
         private System.Windows.Forms.Button btnAjouter;
         private System.Windows.Forms.Button btnSelectionner;
         private System.Windows.Forms.DataGridView dgProduit;
+        private System.Windows.Forms.Panel panelLeft;
+        private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.GroupBox Rechercher;
         private System.Windows.Forms.TextBox txtRLibelle;
         private System.Windows.Forms.Label label7;

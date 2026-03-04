@@ -18,31 +18,32 @@ namespace AppSenAgriculture.Views.Parametre
         {
             InitializeComponent();
         }
-        BdSenAgricultureContext db=new BdSenAgricultureContext();
+        BdSenAgricultureContext db = new BdSenAgricultureContext();
         private void Effacer()
         {
-            txtCode.Text=string.Empty;
-            txtLibelle.Text=string.Empty;
+            txtCode.Text = string.Empty;
+            txtLibelle.Text = string.Empty;
             dgCategorie.DataSource = db.categories.ToList();
         }
-        
+
         private void btnAjouter_Click(object sender, EventArgs e)
         {
             try
             {
                 Categorie c = new Categorie();
                 c.LibelleCategorie = txtCode.Text;
-                c.DescriptionCategorie= txtLibelle.Text;
+                c.DescriptionCategorie = txtLibelle.Text;
                 db.categories.Add(c);
                 db.SaveChanges();
                 Effacer();
-                
+
             }
-            catch (Exception ex) {
+            catch (Exception ex)
+            {
                 MessageBox.Show(ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
+            }
         }
-    }
 
         private void btnSelectionner_Click(object sender, EventArgs e)
         {
@@ -87,7 +88,7 @@ namespace AppSenAgriculture.Views.Parametre
                 MessageBox.Show(ex.Message, "Erreur", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
             }
-            
+
         }
 
         private void frmCategorie_Load(object sender, EventArgs e)

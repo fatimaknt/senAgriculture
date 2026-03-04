@@ -47,6 +47,7 @@
             this.menuStrip1.Size = new System.Drawing.Size(462, 24);
             this.menuStrip1.TabIndex = 1;
             this.menuStrip1.Text = "menuStrip1";
+            this.menuStrip1.BackColor = System.Drawing.Color.FromArgb(240, 245, 244);
             // 
             // menuStrip2
             // 
@@ -58,6 +59,8 @@
             this.menuStrip2.Size = new System.Drawing.Size(462, 24);
             this.menuStrip2.TabIndex = 2;
             this.menuStrip2.Text = "menuStrip2";
+            this.menuStrip2.BackColor = System.Drawing.Color.FromArgb(235, 240, 238);
+            this.menuStrip2.RenderMode = System.Windows.Forms.ToolStripRenderMode.System;
             // 
             // actionToolStripMenuItem
             // 
@@ -67,6 +70,7 @@
             this.actionToolStripMenuItem.Name = "actionToolStripMenuItem";
             this.actionToolStripMenuItem.Size = new System.Drawing.Size(54, 20);
             this.actionToolStripMenuItem.Text = "&Action";
+            this.actionToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(55, 70, 65);
             // 
             // seDeconnecterToolStripMenuItem
             // 
@@ -91,6 +95,7 @@
             this.parametreToolStripMenuItem.Name = "parametreToolStripMenuItem";
             this.parametreToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
             this.parametreToolStripMenuItem.Text = "Parametre";
+            this.parametreToolStripMenuItem.ForeColor = System.Drawing.Color.FromArgb(55, 70, 65);
             // 
             // produitToolStripMenuItem
             // 
@@ -117,10 +122,24 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(462, 273);
+            this.ClientSize = new System.Drawing.Size(800, 500);
             this.ControlBox = false;
+            this.BackColor = System.Drawing.Color.FromArgb(248, 250, 249);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.menuStrip2);
+            // Ajout d'un DataGridView pour la liste des produits
+            this.dgProduits = new System.Windows.Forms.DataGridView();
+            this.dgProduits.Name = "dgProduits";
+            this.dgProduits.Location = new System.Drawing.Point(20, 60);
+            this.dgProduits.Size = new System.Drawing.Size(760, 400);
+            this.dgProduits.Anchor = System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left | System.Windows.Forms.AnchorStyles.Right | System.Windows.Forms.AnchorStyles.Bottom;
+            this.dgProduits.BackgroundColor = System.Drawing.Color.FromArgb(250, 251, 250);
+            this.dgProduits.EnableHeadersVisualStyles = false;
+            this.dgProduits.ColumnHeadersDefaultCellStyle = new System.Windows.Forms.DataGridViewCellStyle { BackColor = System.Drawing.Color.FromArgb(235, 240, 238), ForeColor = System.Drawing.Color.FromArgb(50, 60, 55) };
+            var altStyle = new System.Windows.Forms.DataGridViewCellStyle();
+            altStyle.BackColor = System.Drawing.Color.FromArgb(248, 249, 248);
+            this.dgProduits.AlternatingRowsDefaultCellStyle = altStyle;
+            this.Controls.Add(this.dgProduits);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "frmMDI";
@@ -144,5 +163,6 @@
         private System.Windows.Forms.ToolStripMenuItem produitToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cateorieToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem lieuToolStripMenuItem;
+        private System.Windows.Forms.DataGridView dgProduits;
     }
 }

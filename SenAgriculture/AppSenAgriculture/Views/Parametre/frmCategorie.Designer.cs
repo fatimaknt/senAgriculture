@@ -1,4 +1,4 @@
-﻿namespace AppSenAgriculture.Views.Parametre
+namespace AppSenAgriculture.Views.Parametre
 {
     partial class frmCategorie
     {

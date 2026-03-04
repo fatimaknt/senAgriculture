@@ -38,6 +38,8 @@
             this.ControlBox = false;
             this.Name = "frmLieu";
             this.Text = "Lieu";
+            this.BackColor = System.Drawing.Color.FromArgb(250, 251, 250);
+            this.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.ResumeLayout(false);
 
         }
